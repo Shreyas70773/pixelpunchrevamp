@@ -2,7 +2,7 @@
 <html lang="en">
 
   <head>
-    <meta charset="utf-8">
+<meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>Deep Dive: The Power of Local SEO</title>
 
@@ -47,7 +47,7 @@
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       "headline": "The Power of Local SEO: How to Rank Higher in Local Searches",
-      "description": "Learn how local SEO can help your business rank higher in local searches. This blog post covers essential strategies like optimizing your Google My Business profile, ensuring NAP consistency, and building local citations to improve your visibility and attract customers.",
+      "description": "Learn how local SEO can help your business rank higher in local searches. This blog post covers essential strategies like optimizing your Google My Business profile, ensuring NAP (name, address, phone) consistency, and building local citations to improve your visibility and attract customers.",
       "datePublished": "2022-01-01",
       "author": {
         "@type": "Person",
@@ -91,10 +91,54 @@
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
   
-        <a class="btn-getstarted" href="#contact">Contact</a>
+        <a class="btn-getstarted" href="javascript:void(0);" onclick="openPopup()">Contact</a>
   
       </div>
     </header>
+    <!-- Popup Contact Form -->
+    <div id="contact-popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <section id="contact" class="contact  text-center">
+            <!-- Section Title -->
+            <div class="container text-center">
+              <h1 class="nostrong">Contact Us!</h1>
+            </div>
+            <!-- Contact Form -->
+            <div class="container">
+              <div class="row gy-4">
+                <div class="col-lg-6">
+                  <!-- Info items (optional) -->
+                  <div class="row gy-4">
+                    <!-- Address, phone, email info here if needed -->
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <form action="forms/contact.php" method="post" class="php-email-form">
+                    <div class="row gy-4">
+                      <div class="col-md-6">
+                        <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                      </div>
+                      <div class="col-md-6">
+                        <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                      </div>
+                      <div class="col-md-12">
+                        <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                      </div>
+                      <div class="col-md-12">
+                        <textarea class="form-control" name="message" rows="4" placeholder="Message" required=""></textarea>
+                      </div>
+                      <div class="col-md-12 text-center">
+                        <button type="submit">Send Message</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
 
     <main class="main">
 
@@ -112,7 +156,7 @@
                   <article class="article" data-aos="fade-up">
     
                     <div class="post-img">
-                      <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
+                      <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid rounded-4">
                     </div>
     
                     <h2 class="title">The Power of Local SEO: How to Rank Higher in Local Searches
@@ -121,7 +165,7 @@
                     <div class="meta-top">
                       <ul>
                         <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-details.html">Shreyas Sunil</a></li>
-                        <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-details.html"><time datetime="2020-01-01">Jan 1, 2022</time></a></li>
+                        <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-details.html"><time datetime="2024-11-01">Nov 1, 2024</time></a></li>
                         <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-details.html">6 Comments</a></li>
                       </ul>
                     </div><!-- End meta top -->
@@ -143,7 +187,7 @@
                       <blockquote  data-aos="fade-up">
                         <p>
                             local SEO isn&apos;t just about adding your address to your website and calling it a day.
-                             No, it&apos;s a multifaceted strategy that includes everything from claiming your Google My Business listing to ensuring your NAP                        </p>
+                             No, it&apos;s a multifaceted strategy that includes everything from claiming your Google My Business listing to ensuring your NAP (name, address, phone)                       </p>
                       </blockquote>
 
                       <div data-aos="fade-up">
@@ -166,7 +210,7 @@
                       </div>
                       <div data-aos="fade-up">
 
-                      <h3>Build Local Citations and Ensure NAP Consistency</h3>
+                      <h3>Build Local Citations and Ensure NAP (name, address, phone) Consistency</h3>
                       <p >
                         Local citations are simply mentions of your business name, address, and phone number (NAP) across the web. 
                         These can appear on local business directories, social media platforms, and other websites. 
@@ -175,7 +219,7 @@
                         If your NAP details are scattered or inconsistent across platforms, 
                         it sends a red flag to search engines, signaling that your business may not be trustworthy.
                       </p>
-                      <img src="assets/img/blog/blog-inside-post.jpg" class="img-fluid" alt="">
+                      <img src="assets/img/blog/blog-inside-post.jpg" class="img-fluid rounded-4" alt="">
                       </div> <div data-aos="fade-up">
                       <h3>Conclusion</h3>
                       <p>
@@ -262,36 +306,7 @@
     
                 </div><!--/Categories Widget -->
     
-                <!-- Recent Posts Widget -->
-                <div class="recent-posts-widget widget-item">
-    
-                  <h3 class="widget-title">Recent Posts</h3>
-    
-                  <div class="post-item">
-                    <img src="assets/img/blog/blog-1.jpg" alt="" class="flex-shrink-0">
-                    <div>
-                      <h4><a href="blog-details.html">The Power of Local SEO: How to Rank Higher in Local Searches</a></h4>
-                      <time datetime="2020-01-01">Jan 1, 2020</time>
-                    </div>
-                  </div><!-- End recent post item-->
-    
-                  <div class="post-item">
-                    <img src="assets/img/blog/blog-2.jpg" alt="" class="flex-shrink-0">
-                    <div>
-                      <h4><a href="blog-details.html">Top 10 Tips for Creating Effective Digital Marketing Campaigns 2024</a></h4>
-                      <time datetime="2020-01-01">Jan 1, 2020</time>
-                    </div>
-                  </div><!-- End recent post item-->
-    
-                  <div class="post-item">
-                    <img src="assets/img/blog/blog-3.jpg" alt="" class="flex-shrink-0">
-                    <div>
-                      <h4><a href="blog-details.html">How to Create Highly Targeted PPC Ad Campaigns That Convert .</a></h4>
-                      <time datetime="2020-01-01">Jan 1, 2020</time>
-                    </div>
-                  </div><!-- End recent post item-->
-    
-                </div><!--/Recent Posts Widget -->
+              
     
                 <!-- Tags Widget -->
                 <div class="tags-widget widget-item">
@@ -395,7 +410,17 @@
     
       <!-- Main JS File -->
       <script src="assets/js/main.js"></script>
-    
+
+      <script>
+        function openPopup() {
+        document.getElementById("contact-popup").classList.add("active");
+      }
+      
+      function closePopup() {
+        document.getElementById("contact-popup").classList.remove("active");
+      }
+      
+      </script>
     </body>
     
     </html>
