@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /index.html
+Allow: /blog.html
+Allow: /blog-details.html
+Disallow: /cacheClear.php
+Disallow: /private/
+
+Sitemap: https://www.pixelandpunch.com/sitemap.xml
