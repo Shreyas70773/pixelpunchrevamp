@@ -75,56 +75,10 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="javascript:void(0);" onclick="openPopup()">Contact</a>
+      <a class="btn-getstarted" href="#contact" onclick="openPopup()">Contact</a>
 
     </div>
   </header>
-
-
-<!-- Popup Contact Form -->
-<div id="contact-popup" class="popup">
-  <div class="popup-content">
-    <span class="close" onclick="closePopup()">&times;</span>
-    <section id="contact" class="contact  text-center">
-      <!-- Section Title -->
-      <div class="container text-center">
-        <h1 class="nostrong">Contact Us!</h1>
-      </div>
-      <!-- Contact Form -->
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-6">
-            <!-- Info items (optional) -->
-            <div class="row gy-4">
-              <!-- Address, phone, email info here if needed -->
-            </div>
-          </div>
-          <div class="col-lg-12">
-            <form action="forms/contact.php" method="post" class="php-email-form">
-              <div class="row gy-4">
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-                <div class="col-md-6">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="4" placeholder="Message" required=""></textarea>
-                </div>
-                <div class="col-md-12 text-center">
-                  <button type="submit">Send Message</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-</div>
 
 
 <main class="main paddownbig">
@@ -591,16 +545,6 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/readmore.js"></script>
 
-<script>
-  function openPopup() {
-  document.getElementById("contact-popup").classList.add("active");
-}
-
-function closePopup() {
-  document.getElementById("contact-popup").classList.remove("active");
-}
-
-</script>
 </body>
 
 </html>
