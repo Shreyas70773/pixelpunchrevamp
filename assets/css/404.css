@@ -1,0 +1,60 @@
+/* 404 Page Styling */
+:root { 
+    --background-color: #FFF; 
+    --default-color: #231824;
+    --heading-color: #74008F; 
+    --accent-color: #830d95;
+    --surface-color: #ffffff;
+    --contrast-color: #fff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--default-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    background-color: var(--background-color);
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+}
+
+/* MASSIVE 404 */
+h1 {
+    font-size: 150px;  /* Adjust as needed */
+    font-weight: 600;
+    color: var(--heading-color);
+    margin-bottom: 20px;
+    line-height: 1; /* Ensures the text doesn’t stretch out too much */
+}
+
+/* BUTTON STYLING */
+.btn-goback {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 14px 36px;
+    border-radius: 6px;
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+/* Hover effect */
+.btn-goback:hover {
+    background: color-mix(in srgb, var(--accent-color), white 20%);
+    transform: scale(1.05); 
+}
+
+/* Click effect (button press) */
+.btn-goback:active {
+    transform: scale(0.95); /* Slightly shrinks to mimic a button press */
+}
